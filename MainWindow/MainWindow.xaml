@@ -1,0 +1,19 @@
+﻿<Window x:Class="MainWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+ 
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="CurrentStepLabel" FontSize="20" />
+            <ProgressBar x:Name="ProgressBar" Minimum="1" Maximum="3" Value="1" Width="120" />
+            <Button x:Name="Step1Button" Content="Step 1" Click="Step1Button_Click" Margin="5" />
+            <Button x:Name="Step2Button" Content="Step 2" Click="Step2Button_Click" Margin="5" IsEnabled="False" />
+            <Button x:Name="Step3Button" Content="Step 3" Click="Step3Button_Click" Margin="5" IsEnabled="False" />
+        </StackPanel>
+    </Grid>
+</Window>

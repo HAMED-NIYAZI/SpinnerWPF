@@ -1,0 +1,41 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpinnerWPF"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" xmlns:fa="http://schemas.fontawesome.io/icons/" x:Class="SpinnerWPF.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+             <Button Grid.Row="0" Grid.Column="0" Height="25" Width="80" Click="Button_Click">save</Button>
+
+        <Label Grid.Row="1" Grid.Column="0">
+            <!--<Label.Style>
+                <Style TargetType="fa:ImageAwesome">
+                    <Style.Triggers Binding="{Binding IsLoading}" Value="True">
+                     </Style.Triggers>
+                </Style>
+            </Label.Style>-->
+            <fa:ImageAwesome  x:Name="spinner1"  Icon="Refresh" Spin="True" Height="48" Width="48" Visibility="Collapsed"  />
+
+
+        </Label>
+        <Label x:Name="mylabel" Grid.Row="2" Grid.Column="0" Content="Data is loaded" 
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"
+                >
+        </Label>
+        <Label x:Name="mylabelLoading" Grid.Row="3" Grid.Column="0" Content="...Loading" 
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"
+                >
+        </Label>
+    </Grid>
+</Window>

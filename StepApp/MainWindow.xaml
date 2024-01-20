@@ -1,0 +1,55 @@
+﻿<Window x:Class="StepApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StepApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1200" FlowDirection="RightToLeft">
+    <Grid >
+        <!-- XAML Layout -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="200"/>
+            <ColumnDefinition />
+
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Background="#FF5CC7CE">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Button Name="PrepareContractButton" Content="Prepare Contract" Click="PrepareContractButton_Click" Grid.Row="1"  Grid.Column="0" Width="200" Height="40"/>
+            <Button Name="RemoveSymbolFromBoardButton" Content="Remove Symbol From Board" Click="RemoveSymbolFromBoardButton_Click" Grid.Row="2"  Width="200" Height="40"/>
+            <Button Name="DeliveryPrepationButton" Content="DeliveryPrepation" Click="DeliveryPrepationButton_Click"   Width="200" Height="40" Grid.Row="3"/>
+            <Button Name="DeliveryPreview" Content="DeliveryPreview" Click="DeliveryPreview_Click"   Width="200" Height="40" Grid.Row="4"/>
+            <Button Name="UpdateBuyeraccounts" Content="UpdateBuyeraccounts" Click="UpdateBuyeraccounts_Click"   Width="200" Height="40" Grid.Row="5"/>
+            <Button Name="GetAssets" Content="GetAssets" Click="GetAssets_Click"   Width="200" Height="40" Grid.Row="6"/>
+            <Button Name="UpdateAssets" Content="UpdateAssets" Click="UpdateAssets_Click"   Width="200" Height="40" Grid.Row="7" />
+            <Button Name="CalcSellerDefault" Content="CalcSellerDefault"  Click="CalcSellerDefault_Click"   Width="200" Height="40" Grid.Row="8" />
+            <Button Name="CalculateDefault" Content="CalculateDefault"   Click="CalculateDefault_Click"   Width="200" Height="40" Grid.Row="9" />
+            <Button Name="FinalDelivery" Content="FinalDelivery" Click="FinalDelivery_Click" Width="200" Height="40" Grid.Row="10" />
+            <Button Name="CreatAssignmentList" Content="CreatAssignmentList" Click="CreatAssignmentList_Click" Width="200" Height="40" Grid.Row="11" />
+            <Button Name="SendAssignmentList" Content="SendAssignmentList" Click="SendAssignmentList_Click"  Width="200" Height="40" Grid.Row="12"/>
+            <Button Name="GetWareHouseCosts" Content="GetWareHouseCosts" Click="GetWareHouseCosts_Click" Width="200" Height="40" Grid.Row="13"/>
+            <Button Name="SaveWarehouseCosts" Content="SaveWarehouseCosts" Click="SaveWarehouseCosts_Click" Width="200" Height="40" Grid.Row="14"/>
+            <Button Name="EndProcess" Content="EndProcess" Click="EndProcess_Click"   Width="200" Height="40" Grid.Row="15"/>
+
+            <!-- Add more buttons for other steps -->
+
+
+        </Grid>
+    </Grid>
+
+
+
+</Window>
